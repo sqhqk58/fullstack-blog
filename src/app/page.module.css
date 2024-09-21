@@ -1,0 +1,26 @@
+.container {
+  height: 90vh;
+  display: flex;
+}
+.section_1 {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.section_2 {
+  flex: 1;
+  position: relative;
+}
+.btnGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.img {
+  object-fit: contain;
+  position: absolute;
+}
