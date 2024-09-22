@@ -1,0 +1,9 @@
+.imgContainer {
+  height: 100px;
+  width: 100%;
+  position: relative;
+}
+.img {
+  object-fit: cover;
+  position: absolute;
+}
