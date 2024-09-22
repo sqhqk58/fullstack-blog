@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import { AppProvider } from "@/context/AppContext";
+import AuthProvider from "@/components/Auth/AuthProvider";
 
 export const metadata = {
   title: "Create Next App",
@@ -15,9 +16,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <AppProvider>
-          <NavBar />
-          <Container>{children}</Container>
-          <Footer />
+          <AuthProvider>
+            <NavBar />
+            <Container>{children}</Container>
+            <Footer />
+          </AuthProvider>
         </AppProvider>
       </body>
     </html>

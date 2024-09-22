@@ -26,9 +26,6 @@ function MainNav() {
               <Link href="/about" className="nav-link">
                 About us
               </Link>
-              <Link href="/blog" className="nav-link">
-                Blog
-              </Link>
               <Link href="/dashboard" className="nav-link">
                 Dashboard
               </Link>
